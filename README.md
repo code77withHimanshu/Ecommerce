@@ -5,6 +5,7 @@ The customers can view products(added by vendors), add them to their cart, place
 The vendors can view products, add products, update products(like name, description, price, category, image etc.), delete products, manage orders by changing their status to pending, shipped, completed, cancelled etc
 
 User can also change their password by clicking on the avatar.
+
 There is a Search button and products are filtered by categories
 
 
@@ -70,7 +71,11 @@ Feel free to test all the features in the project. :)
 
 
 It is meeting all the FrontEnd, BackEnd and Server-Side Logic Requirements as asked in the assignment. 
+
 I have used MySQL for storing data. 
+
 BackEnd Development with Express.js. 
+
 Server-Side Logic with Node.js.
+
 Frontend Development with React.js
