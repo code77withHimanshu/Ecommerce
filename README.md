@@ -17,6 +17,18 @@ If the role or job requirements necessitate the inclusion of a payment gateway, 
 Clone the repository and open in VS code.
  - `git clone git@github.com:code77withHimanshu/Ecommerce.git`
 
+
+```markdown
+DB_HOST=127.0.0.1
+DB_PORT=3307
+DB_USER=root
+DB_PASSWORD=tiger
+DB_NAME=Ecommerce
+PORT=5000
+JWT_SECRET="Cron!#@$afxw"
+```
+
+
 ### Step-2
 Open the terminal and write the following commands
 
