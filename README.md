@@ -67,19 +67,15 @@ This will start the frontend on the local
 
 
 ### Step-5
-Go to Login and access the dummy user i.e.
+Go to SignUp to create your own user(either a `Customer` or a `Vendor` by selecting the role) or Go to Login and access the dummy user i.e. 
 
-For Customers:
-
+For `Customers`:
 Email: customer2@gmail.com
-
 Password: 123
 
 
-For Vendors:
-
+For `Vendors`:
 Email: vendor2@gmail.com
-
 Password: 123
 
 
