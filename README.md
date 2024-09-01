@@ -26,6 +26,8 @@ If the role or job requirements necessitate the inclusion of a payment gateway, 
 Clone the repository and open in VS code.
  - `git clone git@github.com:code77withHimanshu/Ecommerce.git`
 
+Note: In order to access the `db.sql` file, import it in MySql Workbench. Then use the database `Ecommerce` to see all the tables.
+
 ### Step-2
 Go to the backend folder and open .env file.
 You can change the .env file according to your configuration.
