@@ -17,7 +17,12 @@ If the role or job requirements necessitate the inclusion of a payment gateway, 
 Clone the repository and open in VS code.
  - `git clone git@github.com:code77withHimanshu/Ecommerce.git`
 
+### Step-2
+Go to the backend folder and open .env file.
+You can change the .env file according to your configuration.
+Note: If you are using mysql port 3306(default port) then change the following .env file accordingly.
 
+.env
 ```markdown
 DB_HOST=127.0.0.1
 DB_PORT=3307
@@ -29,7 +34,7 @@ JWT_SECRET="Cron!#@$afxw"
 ```
 
 
-### Step-2
+### Step-3
 Open the terminal and write the following commands
 
 - `cd .\backend\`
@@ -39,7 +44,7 @@ Open the terminal and write the following commands
 This will run the server on the local and you will see MySQL Connected...
 
 
-### Step-3
+### Step-4
 Open another terminal and write the following commands
 
 - `cd .\frontend\`
@@ -50,7 +55,7 @@ This will start the frontend on the local
 
 
 
-### Step-4
+### Step-5
 Go to Login and access the dummy user i.e.
 For Customers:
 Email: customer2@gmail.com
@@ -61,7 +66,7 @@ For Vendors:
 Email: vendor2@gmail.com
 Password: 123
 
-
+Feel free to test all the features in the project. :)
 
 
 It is meeting all the FrontEnd, BackEnd and Server-Side Logic Requirements as asked in the assignment. 
