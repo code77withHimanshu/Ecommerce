@@ -82,10 +82,10 @@ Feel free to test all the features in the project. :)
 
 It is meeting all the FrontEnd, BackEnd and Server-Side Logic Requirements as asked in the assignment. 
 
-I have used MySQL for storing data. 
+I have used `MySQL` for storing data. 
 
-BackEnd Development with Express.js. 
+BackEnd Development with `Express.js`. 
 
-Server-Side Logic with Node.js.
+Server-Side Logic with `Node.js`.
 
-Frontend Development with React.js
+Frontend Development with `React.js`.
