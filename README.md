@@ -9,7 +9,7 @@ There is a Search button and products are filtered by categories
 
 
 ### Payment Gateway Integration
-## Note: A payment gateway has not been integrated into this application. This decision was made due to the requirement of sharing sensitive bank account details, which I am not comfortable providing to payment gateways.
+Note: A payment gateway has not been integrated into this application. This decision was made due to the requirement of sharing sensitive bank account details, which I am not comfortable providing to payment gateways.
 
 If the role or job requirements necessitate the inclusion of a payment gateway, I am prepared to implement it and will address this integration accordingly.
 
@@ -20,7 +20,7 @@ Clone the repository and open in VS code.
 ### Step-2
 Go to the backend folder and open .env file.
 You can change the .env file according to your configuration.
-## Note: If you are using mysql port 3306(default port) then change the following .env file accordingly.
+#### Note: If you are using mysql port 3306(default port) then change the following .env file accordingly.
 
 backend/.env
 ```markdown
