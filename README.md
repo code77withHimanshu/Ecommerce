@@ -22,7 +22,7 @@ Go to the backend folder and open .env file.
 You can change the .env file according to your configuration.
 Note: If you are using mysql port 3306(default port) then change the following .env file accordingly.
 
-.env
+backend/.env
 ```markdown
 DB_HOST=127.0.0.1
 DB_PORT=3307
