@@ -1,17 +1,16 @@
-// src/components/ProductList.js
 import React, { useEffect, useState } from 'react';
 import axios from '../axiosConfig';
-import { Card, CardMedia, CardContent, Typography, Grid, Button, Box, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
+import { Card, CardMedia, CardContent, Typography, Grid, Button, Box, MenuItem, Select, FormControl, InputLabel, TextField } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import ProductUpdateModal from './ProductUpdateModal';
-import ProductUpdateForm from './ProductUpdateForm';
 
 const ProductList = () => {
   const { user } = useAuth();
   const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
+  const [searchQuery, setSearchQuery] = useState('');
   const [openModal, setOpenModal] = useState(false);
   const [currentProductId, setCurrentProductId] = useState(null);
   const navigate = useNavigate();
@@ -39,7 +38,7 @@ const ProductList = () => {
       await axios.delete(`http://localhost:5000/products/${productId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      setProducts(products.filter(product => product.id !== productId));
+      setProducts(products.filter(product => product.product_id !== productId));
       window.alert('Product deleted successfully');
     } catch (error) {
       console.error('Error deleting product:', error);
@@ -57,10 +56,15 @@ const ProductList = () => {
     setCurrentProductId(null);
   };
 
-  // Filter products based on selected category name
-  const filteredProducts = selectedCategory === 'All'
-    ? products
-    : products.filter(product => product.category_name === selectedCategory);
+  // Filter products based on selected category and search query
+  const filteredProducts = products.filter(product => {
+    const matchesCategory = selectedCategory === 'All' || product.category_name === selectedCategory;
+    const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      product.category_name.toLowerCase().includes(searchQuery.toLowerCase());
+
+    return matchesCategory && matchesSearch;
+  });
 
   return (
     <div style={{ padding: '20px' }}>
@@ -68,7 +72,14 @@ const ProductList = () => {
         Product List
       </Typography>
 
-      <Box sx={{ mb: 3, display: 'flex', justifyContent: 'center' }}>
+      <Box sx={{ mb: 3, display: 'flex', justifyContent: 'center', gap: 2 }}>
+        <TextField
+          label="Search"
+          variant="outlined"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          sx={{ minWidth: 300 }}
+        />
         <FormControl variant="outlined" sx={{ minWidth: 200 }}>
           <InputLabel>Category</InputLabel>
           <Select
