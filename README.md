@@ -14,6 +14,14 @@ Note: A payment gateway has not been integrated into this application. This deci
 
 If the role or job requirements necessitate the inclusion of a payment gateway, I am prepared to implement it and will address this integration accordingly.
 
+
+### Uploading Product Images
+I have used image_url in Users table in MySql which stores the url of the image of a product. Therefore, while adding the product, vendors have to add image_url to upload product image. 
+
+I could have also used file upload mechanism to upload product image but that would require a lot of changes in the configuration from your side. 
+
+If the role or job requirements necessitate the inclusion of a payment gateway, I am prepared to implement it and will address this integration accordingly.
+
 ### Step-1
 Clone the repository and open in VS code.
  - `git clone git@github.com:code77withHimanshu/Ecommerce.git`
