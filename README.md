@@ -15,6 +15,7 @@ If the role or job requirements necessitate the inclusion of a payment gateway, 
 
 ### Step-1
 Clone the repository and open in VS code.
+ - `git@github.com:code77withHimanshu/Ecommerce.git`
 
 ### Step-2
 Open the terminal and write the following commands
