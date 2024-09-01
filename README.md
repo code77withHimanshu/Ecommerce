@@ -20,7 +20,7 @@ Clone the repository and open in VS code.
 ### Step-2
 Go to the backend folder and open .env file.
 You can change the .env file according to your configuration.
-#### Note: If you are using mysql port 3306(default port) then change the following .env file accordingly.
+Note: If you are using mysql port 3306(default port) then change the following .env file accordingly.
 
 backend/.env
 ```markdown
