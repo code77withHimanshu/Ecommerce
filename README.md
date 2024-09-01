@@ -68,19 +68,27 @@ This will start the frontend on the local
 
 ### Step-5
 Go to Login and access the dummy user i.e.
+
 For Customers:
+
 Email: customer2@gmail.com
+
 Password: 123
 
 
 For Vendors:
+
 Email: vendor2@gmail.com
+
 Password: 123
+
 
 Feel free to test all the features in the project. :)
 
 
+
 It is meeting all the FrontEnd, BackEnd and Server-Side Logic Requirements as asked in the assignment. 
+
 
 I have used `MySQL` for storing data. 
 
